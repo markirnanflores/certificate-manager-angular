@@ -1,0 +1,40 @@
+.certificate-add {
+    margin-bottom: 7px;
+}
+.certificate-add-new-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.certificate-add-new-button {
+    background-color: rgb(35, 191, 32);
+    color:rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 9px;
+    border-radius: 9px;
+    border:rgb(184, 227, 173);
+    margin-top:23px;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+.certificate-add-new-button-close {
+    background-color: rgb(191, 32, 32);
+}
+
+.certificate-add-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-add-form-input {
+    margin-bottom: 7px;
+}
+
+.certificate-add-form-error {
+    color: rgb(191, 32, 32);
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: -8px;
+}

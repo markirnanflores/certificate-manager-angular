@@ -1,0 +1,22 @@
+<div class="certificate-edit">
+    <div class="certificate-edit-form">
+        <div class="certificate-edit-new-container">
+            <button (click)="onCloseEdit()" class="certificate-edit-new-button certificate-edit-new-button-close">Close</button>
+        </div>
+        <span>Name</span>
+        <input class="certificate-edit-form-input" type="text" name="name" [(ngModel)]="name">
+        <span *ngIf="errorName" class="certificate-edit-form-error">Missing Name parameter</span>
+        <span>Certificate</span>
+        <textarea class="certificate-edit-form-input" name="certificate" [(ngModel)]="certificate" id="" cols="30" rows="10"></textarea>
+        <span *ngIf="errorCertificate" class="certificate-edit-form-error">Missing Certificate parameter</span>
+        <span>Private Key</span>
+        <textarea class="certificate-edit-form-input" name="privateKey" [(ngModel)]="privateKey" id="" cols="30" rows="10"></textarea>
+        <span *ngIf="errorPrivateKey" class="certificate-edit-form-error">Missing Private Key parameter</span>
+        <span>Intermediate CA</span>
+        <textarea class="certificate-edit-form-input" name="intermediateCa" [(ngModel)]="intermediateCa" id="" cols="30" rows="10"></textarea>
+        <span *ngIf="errorIntermediateCa" class="certificate-edit-form-error">Missing Intermediate CA parameter</span>
+        <div>
+            <button (click)="onSaveEdit()" class="certificate-edit-new-button">Save</button>
+        </div>
+    </div>
+</div>

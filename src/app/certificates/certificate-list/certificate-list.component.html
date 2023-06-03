@@ -1,0 +1,11 @@
+<div class="certificates">
+    <certificate-add
+    (onSaveCertificate)="saveCertificate($event)"
+    ></certificate-add>
+    <certificate-card
+    [certificate]="certificate"
+    *ngFor="let certificate of certificates"
+    (onDeleteCertificate)="deleteCertificate(certificate)"
+    (onPutCertificate)="putCertificate($event)"
+    ></certificate-card>
+</div>

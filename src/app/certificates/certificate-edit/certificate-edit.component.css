@@ -1,0 +1,40 @@
+.certificate-edit {
+    margin-bottom: 7px;
+}
+.certificate-edit-new-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.certificate-edit-new-button {
+    background-color: rgb(35, 191, 32);
+    color:rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 9px;
+    border-radius: 9px;
+    border:rgb(184, 227, 173);
+    margin-top:23px;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+.certificate-edit-new-button-close {
+    background-color: rgb(191, 32, 32);
+}
+
+.certificate-edit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-edit-form-input {
+    margin-bottom: 7px;
+}
+
+.certificate-edit-form-error {
+    color: rgb(191, 32, 32);
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: -8px;
+}

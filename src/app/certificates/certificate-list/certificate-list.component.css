@@ -1,0 +1,8 @@
+:host {
+    margin-top: 20px;
+    width: 100%;
+}
+.certificates {
+    display: flex;
+    flex-direction: column;
+}

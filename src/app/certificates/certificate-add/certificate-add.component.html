@@ -1,0 +1,25 @@
+<div class="certificate-add">
+    <div *ngIf="!newCertificate" class="certificate-add-new-container">
+        <button (click)="onNewCertificate(true)" class="certificate-add-new-button">New Certificate</button>
+    </div>
+    <div *ngIf="newCertificate" class="certificate-add-form">
+        <div class="certificate-add-new-container">
+            <button (click)="onNewCertificate(false)" class="certificate-add-new-button certificate-add-new-button-close">Close</button>
+        </div>
+        <span>Name</span>
+        <input class="certificate-add-form-input" type="text" name="name" [(ngModel)]="name">
+        <span *ngIf="errorName" class="certificate-add-form-error">Missing Name parameter</span>
+        <span>Certificate</span>
+        <textarea class="certificate-add-form-input" name="certificate" [(ngModel)]="certificate" id="" cols="30" rows="10"></textarea>
+        <span *ngIf="errorCertificate" class="certificate-add-form-error">Missing Certificate parameter</span>
+        <span>Private Key</span>
+        <textarea class="certificate-add-form-input" name="privateKey" [(ngModel)]="privateKey" id="" cols="30" rows="10"></textarea>
+        <span *ngIf="errorPrivateKey" class="certificate-add-form-error">Missing Private Key parameter</span>
+        <span>Intermediate CA</span>
+        <textarea class="certificate-add-form-input" name="intermediateCa" [(ngModel)]="intermediateCa" id="" cols="30" rows="10"></textarea>
+        <span *ngIf="errorIntermediateCa" class="certificate-add-form-error">Missing Intermediate CA parameter</span>
+        <div>
+            <button (click)="onSave()" class="certificate-add-new-button">Save</button>
+        </div>
+    </div>
+</div>

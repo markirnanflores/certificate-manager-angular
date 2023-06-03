@@ -1,0 +1,20 @@
+<div class="card">
+    <div *ngIf="!editCertificate">
+        <div class="card-delete-container">
+            <button (click)="onDelete(certificate)" class="card-delete-button">x</button>
+        </div>
+        <h3 class="card-name">{{ certificate.name }}</h3>
+        <p class="card-certificate">Certificate: {{ certificate.certificate | limit }}</p>
+        <p class="cart-private-key">Private Key: {{ certificate.privateKey | limit }}</p>
+        <p class="card-intermediate-ca" *ngIf="certificate.intermediateCa">Intermediate CA: {{ certificate.certificate | limit }}</p>
+        <div class="card-edit-container">
+            <button (click)="onEditCertificate(true)" class="card-edit-button">Edit</button>
+        </div>
+    </div>
+    <certificate-edit
+    *ngIf="editCertificate"
+    [certificateModel]="certificate"
+    (onSaveEditCertificate)="onPut($event)"
+    (onCloseEditCertificate)="onEditCertificate(!$event)"
+    ></certificate-edit>
+</div>

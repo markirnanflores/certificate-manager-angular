@@ -1,0 +1,41 @@
+.card {
+    margin-top: 9px;
+    background-color: rgb(255, 255, 255);
+    border:#d2e8f2ac solid 2px;
+    border-radius: 30px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 11px;
+}
+
+.card-edit-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-edit-button {
+    background-color: rgb(32, 104, 191);
+    color:rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 9px;
+    border-radius: 9px;
+    border:rgb(184, 227, 173);
+    margin-right:9px;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.card-delete-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-delete-button {
+    background-color: inherit;
+    color:rgb(191, 32, 32);
+    font-size: 21px;
+    font-weight: bolder;
+    border:rgba(255, 255, 255,0);
+    margin-right:9px;
+    cursor: pointer;
+}
