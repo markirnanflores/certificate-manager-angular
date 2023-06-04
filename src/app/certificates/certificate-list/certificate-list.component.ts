@@ -10,6 +10,7 @@ import { CertificateService } from '../services/certificate.service';
 export class CertificateListComponent implements OnInit {
 
   certificates : Certificate[] =  [];
+  finishedLoading: boolean = false;
 
   constructor(
     private certificateService: CertificateService
@@ -20,6 +21,7 @@ export class CertificateListComponent implements OnInit {
     this.certificateService.get()
     .subscribe(certificates => {
       this.certificates = certificates;
+      this.finishedLoading = true;
     });
   }
 

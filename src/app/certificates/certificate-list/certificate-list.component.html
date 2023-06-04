@@ -8,4 +8,7 @@
     (onDeleteCertificate)="deleteCertificate(certificate)"
     (onPutCertificate)="putCertificate($event)"
     ></certificate-card>
+    <div *ngIf="!finishedLoading" class="certificates-loader">
+        Loading Certificates...
+    </div>
 </div>

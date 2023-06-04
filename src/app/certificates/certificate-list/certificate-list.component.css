@@ -2,7 +2,12 @@
     margin-top: 20px;
     width: 100%;
 }
+
 .certificates {
     display: flex;
     flex-direction: column;
+}
+
+.certificates-loader {
+    text-align: center;
 }
